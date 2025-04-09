@@ -1,0 +1,8 @@
+server/
+node_modules/
+dist/
+.git/
+.replit/
+.upm/
+.cache/
+.local/
