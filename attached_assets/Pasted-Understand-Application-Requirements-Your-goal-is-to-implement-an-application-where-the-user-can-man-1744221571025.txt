@@ -1,0 +1,63 @@
+Understand Application Requirements
+Your goal is to implement an application where the user can manage their expenses. The main features of the application include tracking, adding, editing, and deleting expenses with a wallet balance that updates in real-time.
+
+
+Core Functionalities:
+
+Wallet Balance:
+A default wallet balance of 5000 that can be incremented.
+Prevent users from spending more than the available wallet balance. Display an alert if a user tries to exceed this limit.
+Add Expense Form:
+Provide fields for title, amount, category, and date.
+Validate required fields to ensure users provide all necessary details before adding an expense.
+After successfully adding an expense, the fields in the form (title, amount, category, and date) should be cleared to allow fresh input for the next expense.
+Update the wallet balance accordingly.
+Use React Modals to show these forms.
+Edit/Delete Expense:
+Allow users to edit and delete expenses from the expense list.
+Update the wallet balance dynamically when expenses are modified or removed.
+Expense Summary:
+Display a categorized summary of expenses using a pie chart for easy visualization.
+Expense Trends:
+Show spending trends with a bar chart categorized by expense type.
+Data Persistence:
+Persist the wallet balance and expense list using localStorage so data is retained even after a page refresh.
+Responsive Design:
+Ensure the application is usable across different screen sizes, including mobile and tablet views.
+Try to replicate your project as closely as possible to match the provided screenshots.
+
+Expense Tracker Initial View:
+
+Upon the initial render, the application should display the wallet balance and a summary of expenses, including sections for adding new expenses and viewing expense history. 
+
+Adding Balance
+Adding Expenses:
+
+When the user clicks on the "Add Expense" button, a form should render to allow entry of details like title, amount, category, and date. Validation should ensure all required fields are completed.
+After adding some Expenses 
+
+ Component Overview
+The application includes the following components:
+
+Wallet Balance Display: Shows the current balance, updating automatically with any expense or income modification.
+Add/Edit Expense Form: Provides fields for title, amount, category, and date, with validation.
+Expense List: Shows each expense, including edit and delete options.
+Expense Summary (Pie Chart): Provides an overview of expenses by category.
+Expense Trends (Bar Chart): Shows a graphical trend of spending by category. 
+
+ NOTE:
+Before verifying the correctness of your implementation, please make sure you have done the following things cleanly as this could result in test case failure.
+
+Make Sure There is only one <h1> tag present in the Application and it contains the heading as “Expense Tracker”. For Other Headings, Use any heading tags other than <h1>.
+Add Income Button: Add a button with type="button" labeled "+ Add Income" to initiate adding income.
+Add Balance Form : Make sure the input field has type = “number” and placeholder = “Income Amount”
+Add Balance Button: Include a button with type="submit" and labelled “Add Balance” to submit the Add Balance Form.
+Add Expense Button: Add a button with type="button" labeled "+ Add Expense" to initiate adding expenses.
+Expense Title Input: Include an input field with name="title" for users to enter the expense title.
+Expense Price Input: Include an input field with name="price" for users to specify the expense amount.
+Expense Category Dropdown: Add a dropdown menu with name="category" to categorize expenses.
+Expense Date Input : Add an input field with  name="date" for users to enter date of expense.
+Add Expense Button: Include a type="submit" button labeled "Add Expense" to submit expense details.
+Local Storage : When saving the expense data in local storage, make sure you use ‘expenses’ as key.
+Wallet Balance: Display the wallet balance prominently with a header like "Wallet Balance: $0.00".
+Text Strings: Ensure text labels "+ Add Income", "+ Add Expense", and "Wallet Balance" are explicitly present in the UI.
